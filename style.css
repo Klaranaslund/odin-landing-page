@@ -1,0 +1,29 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+  }
+
+.quote{
+}
+
+.footer{
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
   margin: 0;
   font-family: Roboto, sans-serif;
   display: flex;
@@ -16,6 +15,14 @@ button {
   padding: 8px 16px;
 }
 
+.buttoncontainer {
+  padding-bottom: 40px;
+}
+
+.image{
+  background-color: #d3cece;
+}
+
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
@@ -26,18 +33,31 @@ input {
 .content {
   flex: 1;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
   gap: 16px;
 }
 
 .infotext{
     max-width: 600px;
+    padding-bottom: 20px;
   }
+
+
+.headerline {
+  padding-bottom: 40px;
+}
+
+
+.heading2{
+  font-size: 50px;
+  text-align: center;
+  padding: 30px;
+  font-weight: 400px;
+}
 
 .first{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     background-color: rgb(67, 95, 76);
     padding: 30px;
@@ -45,13 +65,12 @@ input {
 
   .second{
     display: flex;
-    background-color: azure;
     justify-content: center;
     gap: 52px;
     }
 
   .third{
-    background-color: #afacac;
+    background-color: #d3cece;
     display: flex;
     justify-content: center;
     padding: 60px;
@@ -59,6 +78,7 @@ input {
 
   .quote{
     max-width: 1000px;
+    font-size: 40px;
   }
 
 
@@ -67,18 +87,17 @@ a {
   text-decoration: none;
 }
 
+h1{
+  margin: 0;
+}
+
 .header,
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   padding: 16px;
   background-color: rgb(67, 95, 76);
 
-}
-
-.heading2{
-    font-size: 50px;
-    text-align: center;
 }
 
 ul {
@@ -90,6 +109,7 @@ ul {
 }
 
 img{
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 300px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }

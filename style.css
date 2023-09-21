@@ -47,11 +47,11 @@ input {
   display: flex;
   flex-direction: column;
 }
-/* Add this CSS to align the header and first div content to the sides */
+
 .header {
   display: flex;
-  justify-content: space-between; /* Use space-between to push content to the sides */
-  align-items: center; /* Center vertically within the header */
+  justify-content: space-between; 
+  align-items: center; 
   padding: 10px;
   padding-left: 80px;
   padding-right: 80px;
@@ -60,24 +60,27 @@ input {
 
 .first {
   display: flex;
-  justify-content: space-between; /* Use space-between to push content to the sides */
-  align-items: center; /* Center vertically within the first div */
+  justify-content: space-between; 
   background-color: #1F2937;
   padding: 80px;
 }
 
-
-
 .infotext{
     padding-bottom: 20px;
     padding-right: 20px;
-    font-size: 18px;
-    color:#E5E7EB;
   }
 
+  .infotext, a{
+  font-size: 18px;
+  color:#E5E7EB;
+  }
+  a {
+    text-decoration: none;
+  }
 
-.headerline {
-  padding-bottom: 40px;
+.headerlogo {
+  font-size: 24px;
+  color: #F9FAF8;
 }
 
 
@@ -87,14 +90,6 @@ input {
   padding: 30px;
   font-weight: 400px;
 }
-/*
-.first{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: #1F2937;
-    padding: 80px;
-  }*/
 
   .second{
     display: flex;
@@ -105,7 +100,7 @@ input {
   .third{
     background-color:#E5E7EB;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
     padding: 60px;
   }
 
@@ -115,10 +110,6 @@ input {
   }
 
 
-a {
-  color: #666;
-  text-decoration: none;
-}
 
 h1{
   margin: 0;

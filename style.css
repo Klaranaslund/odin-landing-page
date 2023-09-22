@@ -80,10 +80,10 @@ a {
 
 /*Lägg in rätt färg o font*/
 button {
-  font-family: Roboto, sans-serif;
   border: none;
+  color: white;
   border-radius: 8px;
-  background: #eee;
+  background:  #3882F6;
   padding: 8px 16px;
 }
 
@@ -142,8 +142,8 @@ Edit when image replaces empty background*/
 
 /*skriv padding på samma rad*/
 .quote {
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 350px;
+  padding-right: 350px;
   font-size: 36px;
   font-style: italic;
 }
@@ -153,7 +153,7 @@ Edit when image replaces empty background*/
 font-size: 24px;
 font-weight: 600;
 margin-left: auto;
-padding-right: 400px;
+padding-right: 350px;
 }
 
 
@@ -170,8 +170,14 @@ padding-right: 400px;
   display: flex;
   flex: 1;
   justify-content: space-between;
+  align-items: center;
   background-color: #3882F6;
-  padding: 30px 210px 30px 210px;
+  color: white;
+  padding: 30px 150px 30px 150px;
+}
+
+#actionbutton{
+  border: 2px solid white
 }
 
 /*wtf*/

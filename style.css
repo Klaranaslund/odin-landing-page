@@ -158,12 +158,19 @@ padding-right: 400px;
 
 
 /*Fourth flex-container containing calltoaction*/
-.forth{
-  
+.fourth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 50px 100px 50px;
 }
 
+/*flexcontainer containing heading, text and button*/
 .calltoaction{
-    
+  display: flex;
+  justify-content: space-between;
+  background-color: #3882F6;
+  padding: 30px 180px 30px 180px;
 }
 
 input {

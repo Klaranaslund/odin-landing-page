@@ -103,7 +103,7 @@ Edit when image replaces empty background*/
   font-size: 36px;
   text-align: center;
   color: #1F2937;
-  padding: 60px;
+  padding-top: 60px;
   font-weight: 900;
 }
 
@@ -112,11 +112,20 @@ Edit when image replaces empty background*/
   display: flex;
   justify-content: center;
   gap: 52px;
-  padding-bottom: 60px;
+  padding: 60px 350px 60px 350px;
+  flex-wrap: wrap;
   }
 
-/*Contains images and texts*/
+/*Contains images and texts
+
+Texten flödar över!
+
+*/
 .imagecontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
   /*fixa wrap*/
 }
 

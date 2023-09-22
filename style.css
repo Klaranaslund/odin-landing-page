@@ -35,7 +35,6 @@ button {
 .heromaintext{
   font-size: 48px;
   color: #F9FAF8;
-  font-weight: extra-bold;
 
 }
 
@@ -84,6 +83,7 @@ input {
 
 .headerlogo {
   font-size: 24px;
+  font-weight: 400;
   color: #F9FAF8;
 }
 
@@ -102,33 +102,29 @@ input {
     padding-bottom: 60px;
     }
 
-  .third{
-    background-color:#E5E7EB;
-    display: flex;
-    align-items: center;
-    padding: 60px;
-    flex-direction: column;
+    .third {
+      background-color: #E5E7EB;
+      display: flex;
+      align-items: center;
+      padding: 60px;
+      flex-direction: column;
   }
-
-  .quote{
-    max-width: 1000px;
-    font-size: 36px;
-    font-style:light italic;
+  
+  .quote {
+      max-width: 1000px;
+      font-size: 36px;
+      font-style: italic;
   }
-
-
+  
+  /* Align the quote author to the right using margin */
+  .quoteAuthor {
+    margin-left: auto; 
+    font-size: 24px;
+    font-weight: 600;
+  }
 
 h1{
   margin: 0;
-}
-
-
-.footer {
-  display: flex;
-  justify-content:space-around;
-  padding: 16px;
-  background-color: #1F2937;
-
 }
 
 ul {
@@ -144,3 +140,12 @@ ul {
   height: 300px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+.footer {
+  display: flex;
+  justify-content:space-around;
+  padding: 16px;
+  background-color: #1F2937;
+  color: #F9FAF8;
+}
+

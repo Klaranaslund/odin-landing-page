@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/*behövs .content o body som gör typ samma?*/
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 /*Main flex-container, containing columns*/
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
+
 
 /*rensa upp så padding blir på 1 rad endast*/
 .header {
@@ -137,7 +135,7 @@ Texten flödar över!
 }
 
 .imagetext{
-  /*fixa text så den inte flyger åt helv*/
+  max-width: 200px;
 }
 
 /*Third flex-container. Contains quote and quoteauthor.*/

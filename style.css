@@ -7,6 +7,78 @@ body {
   flex-direction: column;
 }
 
+/*Main flex-container, containing columns*/
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/*rensa upp så padding blir på 1 rad endast*/
+.header {
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px;
+  padding-left: 180px;
+  padding-right: 180px;
+  background-color: #1F2937;
+}
+
+/*Left side logotext in header*/
+.headerlogo {
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+/*Right side links in header*/
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
+}
+
+/*Right side links in header*/
+a {
+  text-decoration: none;
+}
+
+/*Right side links in header, infotext on the left in .first container*/
+.infotext, a{
+  font-size: 18px;
+  color:#E5E7EB;
+  }
+
+/*First flex-container below header. Contains two other containers, left and right. */
+.first {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #1F2937;
+    padding: 120px 180px 120px 180px;
+}
+
+/*Contains mainlogo, infotext and buttoncontainer.*/
+.left{
+  flex: 1;
+}
+
+.mainlogo{
+  font-size: 48px;
+  color: #F9FAF8;
+}
+
+.infotext{
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+/*fullösning*/
+.buttoncontainer {
+  padding-bottom: 40px;
+}
+
+/*Lägg in rätt färg o font*/
 button {
   font-family: Roboto, sans-serif;
   border: none;
@@ -15,11 +87,9 @@ button {
   padding: 8px 16px;
 }
 
-.buttoncontainer {
-  padding-bottom: 40px;
-}
-
-.image{
+/*Placeholder for image in .first flexcontainer. 
+Edit when image replaces empty background*/
+.right{
   background-color:#E5E7EB;
   display: flex;
   flex: 1;
@@ -28,14 +98,72 @@ button {
   justify-content: center;
 }
 
-.introdiv{
-  flex: 1;
+/*Header separating .first and .second-containers*/
+.mainheading{
+  font-size: 36px;
+  text-align: center;
+  color: #1F2937;
+  padding: 60px;
+  font-weight: 900;
 }
 
-.heromaintext{
-  font-size: 48px;
-  color: #F9FAF8;
+/*Second main flex-container. Contains imagecontainer*/
+.second{
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  padding-bottom: 60px;
+  }
 
+/*Contains images and texts*/
+.imagecontainer{
+  /*fixa wrap*/
+}
+
+/*fullösning*/
+.img{
+    width: auto;
+    height: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.imagetext{
+  /*fixa text så den inte flyger åt helv*/
+}
+
+/*Third flex-container. Contains quote and quoteauthor.*/
+.third {
+  background-color: #E5E7EB;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  flex-direction: column;
+}
+
+/*skriv padding på samma rad*/
+.quote {
+  padding-left: 400px;
+  padding-right: 400px;
+  font-size: 36px;
+  font-style: italic;
+}
+
+/*eventuell fullösning?*/
+.quoteauthor {
+font-size: 24px;
+font-weight: 600;
+margin-left: auto;
+padding-right: 400px;
+}
+
+
+/*Fourth flex-container containing calltoaction*/
+.forth{
+  
+}
+
+.calltoaction{
+    
 }
 
 input {
@@ -45,102 +173,12 @@ input {
   width: 400px;
 }
 
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 10px;
-  padding-left: 180px;
-  padding-right: 180px;
-  background-color: #1F2937;
-}
-
-.first {
-  display: flex;
-  justify-content: space-between; 
-  background-color: #1F2937;
-  padding: 120px 180px 120px 180px;
-}
-
-.infotext{
-    padding-bottom: 20px;
-    padding-right: 20px;
-  }
-
-  .infotext, a{
-  font-size: 18px;
-  color:#E5E7EB;
-  }
-  a {
-    text-decoration: none;
-  }
-
-.headerlogo {
-  font-size: 24px;
-  font-weight: 400;
-  color: #F9FAF8;
-}
-
-
-.heading2{
-  font-size: 50px;
-  text-align: center;
-  padding: 30px;
-  font-weight: 400px;
-}
-
-  .second{
-    display: flex;
-    justify-content: center;
-    gap: 52px;
-    padding-bottom: 60px;
-    }
-
-    .third {
-      background-color: #E5E7EB;
-      display: flex;
-      align-items: center;
-      padding: 60px;
-      flex-direction: column;
-  }
-  
-  .quote {
-      max-width: 1000px;
-      font-size: 36px;
-      font-style: italic;
-  }
-  
-  /* Align the quote author to the right using margin */
-  .quoteAuthor {
-    margin-left: auto; 
-    font-size: 24px;
-    font-weight: 600;
-  }
-
+/*wtf*/
 h1{
   margin: 0;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 16px
-}
-
-.img{
-  width: auto;
-  height: 300px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
+/*Footer containing copyright claim*/
 .footer {
   display: flex;
   justify-content:space-around;

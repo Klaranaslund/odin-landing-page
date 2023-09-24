@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/*behövs .content o body som gör typ samma?*/
+/*Main flex-container, containing columns*/
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -9,16 +9,11 @@ body {
   flex: 1;
 }
 
-/*Main flex-container, containing columns*/
-
-
-/*rensa upp så padding blir på 1 rad endast*/
+/*Header containing .headerlogo and ul*/
 .header {
   display: flex;
   justify-content: space-between; 
-  padding: 10px;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding: 10px 250px 10px 250px;
   background-color: #1F2937;
 }
 
@@ -71,29 +66,30 @@ a {
   padding-bottom: 20px;
   padding-right: 20px;
 }
-/*fullösning*/
 .buttoncontainer {
   padding-bottom: 40px;
 }
 
-/*Lägg in rätt färg o font*/
 button {
   border: none;
   color: white;
+  font-size: 18px;
   border-radius: 8px;
   background:  #3882F6;
   padding: 8px 16px;
 }
 
-/*Placeholder for image in .first flexcontainer. 
-Edit when image replaces empty background*/
+/*Container for image on right side of hero*/
 .right{
-  background-color:#E5E7EB;
   display: flex;
   flex: 1;
-  font-size: 18px;
   align-items: center;
   justify-content: center;
+}
+/*Image in hero*/
+.heroimg{
+  width: auto;
+  height: 450px;
 }
 
 /*Header separating .first and .second-containers*/
@@ -110,15 +106,11 @@ Edit when image replaces empty background*/
   display: flex;
   justify-content: center;
   gap: 52px;
-  padding: 60px 350px 60px 350px;
+  padding: 60px 250px 60px 250px;
   flex-wrap: wrap;
   }
 
-/*Contains images and texts
-
-Texten flödar över!
-
-*/
+/*Contains images and texts*/
 .imagecontainer{
   display: flex;
   flex-direction: column;
@@ -127,7 +119,6 @@ Texten flödar över!
   /*fixa wrap*/
 }
 
-/*fullösning*/
 .img{
     width: auto;
     height: 300px;
@@ -136,6 +127,7 @@ Texten flödar över!
 
 .imagetext{
   max-width: 200px;
+  padding: 20px 0px 20px 0px;
 }
 
 /*Third flex-container. Contains quote and quoteauthor.*/
@@ -160,7 +152,7 @@ Texten flödar över!
 font-size: 24px;
 font-weight: 600;
 margin-left: auto;
-padding-right: 350px;
+padding: 10px 350px 0px 0px;
 }
 
 

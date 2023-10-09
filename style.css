@@ -141,13 +141,12 @@ button {
 
 /*skriv padding på samma rad*/
 .quote {
-  padding-left: 350px;
-  padding-right: 350px;
+  padding-left: 0px 350px 0px 350px;
   font-size: 36px;
   font-style: italic;
 }
 
-/*eventuell fullösning?*/
+
 .quoteauthor {
 font-size: 24px;
 font-weight: 600;
